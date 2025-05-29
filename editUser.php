@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         </div>
         <div>
             <label for="inputEmail">Email</label>
-            <input type="email" id="inputEmail" name="inputEmail" value="<?php echo htmlspecialchars($email);  ?>" >
+            <input type="email" id="inputEmail" name="inputEmail" required value="<?php echo htmlspecialchars($email);  ?>" >
         </div>
         <button type="submit">Update</button>
     </form>

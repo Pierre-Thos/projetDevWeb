@@ -63,15 +63,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <form method="POST">
         <div>
             <label for="inputLabel" >Label</label>
-            <input type="text" id="inputLabel" name="inputLabel" value="<?php echo htmlspecialchars($label); ?>">
+            <input type="text" id="inputLabel" name="inputLabel" required value="<?php echo htmlspecialchars($label); ?>">
         </div>
         <div>
             <label for="inputDescription">Description</label>
-            <input type="text" id="inputDescription" name="inputDescription" value="<?php echo htmlspecialchars($description);  ?>" >
+            <input type="text" id="inputDescription" name="inputDescription" required value="<?php echo htmlspecialchars($description);  ?>" >
         </div>
         <div>
             <label for="inputUrl">URL</label>
-            <input type="text" id="inputUrl" name="inputUrl" value="<?php echo htmlspecialchars($url);  ?>" >
+            <input type="text" id="inputUrl" name="inputUrl" required value="<?php echo htmlspecialchars($url);  ?>" >
         </div>
         <button type="submit">Update</button>
     </form>

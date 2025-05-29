@@ -54,7 +54,7 @@ require_once "_menu.php";
                     <td><?php echo $entry['url'] ?></td>
                     <!-- <td><img src="../img/edit_icon.png" alt=""></td> -->
                     <td>
-                        <form method="POST">
+                        <form method="POST" onsubmit="return confirm('Etes vous sur de vouloir supprimer?')">
                             <input type="hidden" name="deleteID" value="<?php echo $entry['id'] ?>">
                             <button>Delete</button>
                         </form>

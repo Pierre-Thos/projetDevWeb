@@ -5,6 +5,7 @@ ini_set('display_errors', 1);
 
 require_once "connection.php";
 
+//Montre toutes les recommendations sur la page d'acceuil
 $sql = 'SELECT * FROM reco_item';
 
 $stmt_sql = $connexion->query($sql);

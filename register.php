@@ -1,6 +1,6 @@
 <?php 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
-        echo "form envoyé !";
+        //echo "form envoyé !";
 
         //Recuperation des donnees de la BDD
         $password = $_POST['password'];
@@ -16,7 +16,7 @@
         $stmt->execute([
             ':username' => $username,
             ':email' => $email,
-            ':password' => password_hash($password, PASSWORD_DEFAULT)
+            ':password' => password_hash($password, PASSWORD_DEFAULT) //Hashe le password pour qu'il ne soit pas visible en BDD
         ]);
 
         header('Location:login.php?msg=Utilisateur créé');

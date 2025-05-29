@@ -22,11 +22,3 @@ body {
     }
     border-collapse: collapse;
 }
-
-body {
-  background-image: url('BladeRunner:JohnWick.png');
-  background-size: cover;        /* Pour que l'image couvre tout l'écran */
-  background-position: center;   /* Centrer l'image */
-  background-repeat: no-repeat;  /* Ne pas répéter l'image */
- background-color: rgb(23, 13, 13);
-}
