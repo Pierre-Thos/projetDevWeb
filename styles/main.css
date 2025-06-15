@@ -22,3 +22,16 @@ body {
     }
     border-collapse: collapse;
 }
+
+.icon-edit {
+    top: 8px;
+    right: 10px;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.icon-edit:hover {
+    color: #333;
+}

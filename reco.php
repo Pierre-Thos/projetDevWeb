@@ -1,5 +1,7 @@
 <?php
 session_start();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 include "connection.php";
 
 $id = $_GET['id'];
@@ -37,6 +39,8 @@ $row = $stmt_sql->fetch(PDO::FETCH_ASSOC);
             Link to Movie
         </a>
     </p>
+    <br><br>
+    <?php require_once "commentaires.php"; ?>
 </body>
 
 </html>
