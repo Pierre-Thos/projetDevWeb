@@ -32,7 +32,7 @@ include "_header.php";
 
             $stmtDelete = $connexion->prepare($deleteComm);
             $stmtDelete->execute(['id' => $id]);
-       // }
+       //}
     }
 
     if ($rows !== null) {

@@ -22,6 +22,7 @@ $fetchReco = "SELECT * FROM reco_item"; //Requete pour prendre infos des Reco
 $stmt = $connexion->query($fetchReco);
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+include "_menu.php";
 
 
 ?>
@@ -30,7 +31,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <html lang="en">
 <?php
 require_once "_header.php";
-require_once "_menu.php";
+
 ?>
 
 <body>

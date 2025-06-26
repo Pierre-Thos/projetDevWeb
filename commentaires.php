@@ -17,7 +17,7 @@ $url = $stmt->fetchColumn();
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    if (isset($_POST['submitComment'])) {
+   // if (isset($_POST['submitComment'])) {
 
         //Recuperer nom et message du commentaire depuis le form
         $nom = trim($_POST["nom"]);
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         header("Location:reco.php?id=$id");
         exit(0);
-    }
+  //  }
 }
 
 
